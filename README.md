@@ -1,1 +1,1 @@
-# Egitim Oncesi Uygulamaları
+# Eğitim Öncesi Uygulamaları
