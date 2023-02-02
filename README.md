@@ -1,1 +1,1 @@
-# E-itim-ncesi-Uygulamalar-
+# Egitim Oncesi Uygulamaları
