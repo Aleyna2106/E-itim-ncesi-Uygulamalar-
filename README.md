@@ -1,1 +1,1 @@
-# Eğitim Öncesi Uygulamaları
+# Yetgen Python Eğitimi
