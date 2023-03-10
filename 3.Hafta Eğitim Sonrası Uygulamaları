@@ -1,1 +1,59 @@
+# 1.Problemin Çözümünü Buraya Yazınız
+sayi = int(input("Sayi giriniz: "))
 
+if sayi > 0:
+    print("Sayi pozitiftir")
+elif sayi < 0:
+    print("Sayi negatiftir")
+else:
+    print("Sayi sifira esittir")
+# 2.Problemin Çözümünü Buraya Yazınız
+sayi = int(input("Sayi: "))
+total = 0
+for i in range(1, sayi):
+    if sayi % i == 0:
+        total = total + i 
+
+if sayi == total:
+    print("Mukemmel sayidir")
+else:
+    print("Mukemmel sayi degil")    
+# 3.Problemin Çözümünü Buraya Yazınız
+sayi = input("Sayi giriniz: ")
+toplam = 0
+for i in sayi:
+    toplam - toplam + (int(i) ** len(sayi))
+if str(toplam) == sayi:
+    print("Armstrong")
+else:
+    print("Degil")
+# 4.Problemin Çözümünü Buraya Yazınız
+for i in range(1, 11 ):
+    for k in range(1, 11):
+        print(f"{i} x {k} = {i*k}")
+        print(i, "x", k, "=", i*k)
+    print()
+# 5.Problemin Çözümünü Buraya Yazınız
+son_fiyat = 0
+while True:
+    fiyat = input("ürün fiyati giriniz (çıkmak için q'ya basın): ")
+    if fiyat == "q":
+        break
+    son_fiyat += float(fiyat)
+
+print("Toplam fiyat:", son_fiyat)
+# 6.Problemin Çözümünü Buraya Yazınız
+for i in range(1,101):
+    if i % 3 !=0:
+        continue
+    elif i % 3 == 0:
+        print(i)
+ # 7.Problemin Çözümünü Buraya Yazınız
+ for sayilar in range(1, 100):
+    print(sayilar)
+    if sayilar % 15 == 0:
+        print("YetGen")
+    elif sayilar % 3 == 0:
+        print("Yet")
+    elif sayilar % 5 == 0:
+        print("Gen")
