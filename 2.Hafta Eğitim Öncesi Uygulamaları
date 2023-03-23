@@ -1,1 +1,40 @@
+# 1.Sorunun çözümünü buraya yazabilirsin.
+print("Hello World")
 
+# 2.Sorunun çözümünü buraya yazabilirsin.
+logo = "mor"
+print(logo)
+
+# 3.Sorunun çözümünü buraya yazabilirsin.
+r = int(input("Bir r giriniz :"))
+pi = int(3.14)
+alan = pi*r**2
+print("Alan :" , alan)
+
+# 4.Sorunun çözümünü buraya yazabilirsin.
+a = [8,9,10]
+b = [7,6,5]
+c = b
+b = a
+a = c
+print('a = {}'.format(a))
+print('b = {}'.format(b))
+
+# 5.Sorunun çözümünü buraya yazabilirsin.
+#5 - 3 // 2
+a = 5
+b = 3
+c = 2
+print((a-b)//c)
+
+# 6.Sorunun çözümünü buraya yazabilirsin.
+8 - 3 * 2 - 1 + 1
+a = 8
+b = 3
+c = 2
+d = 1
+print(a-(b*c)-d+d)
+
+# 7.Sorunun çözümünü buraya yazabilirsin.
+toplamseker = int(input("Bir toplam seker giriniz :"))
+print((toplamseker%3)+(toplamseker/3))
