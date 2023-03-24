@@ -1,0 +1,85 @@
+# 1. sorunun çözümünü buraya yazabilirsin.
+#a = input("İsminizi giriniz: ")
+#b = input("Soyisminizi giriniz: ")
+#c = input("Yaşınızı giriniz: ")
+#d = input("Mesleğinizi giriniz: ")
+P = int(input("Ana parayı giriniz: "))
+R = int(input("Faiz oranını giriniz: "))
+T = int(input("Kalacak süreyi giriniz: "))
+basitfaiz = (P*R*T)/100
+print("Faiz miktarı: ",basitfaiz)
+print("toplam para miktarı: ", int(P+basitfaiz))
+
+# 2. sorunun çözümünü buraya yazabilirsin.
+pi = 3.14
+r = float(input("Bir yarıçap giriniz: "))
+h = float(input("Bir yükseklik giriniz: "))
+
+silindirhacmi = pi*r**2*h
+konininhacmi = (pi*r**2*h)/3
+
+print("{} yarıçapındaki ve {} yüksekliğindeki silindirin hacmi {} , koninin hacmi ise {}'dir.".format(r,h,silindirhacmi,konininhacmi))
+print(f"{r} yarıçapındaki ve {h} yüksekliğindeki silindirin hacmi {silindirhacmi} , koninin hacmi ise {konininhacmi}'dir.")
+
+# 3. sorunun çözümünü buraya yazabilirsin.
+dogumyili = int(input("Doğum yılınızı giriniz: "))
+yas = 2023-dogumyili
+print(yas)
+
+# 4. sorunun çözümünü buraya yazabilirsin.
+sayi1 = int(input("Birinci sayıyı giriniz: "))
+sayi2 = int(input("İkinci sayıyı giriniz: "))
+
+print(sayi1)
+print(sayi2)
+
+temp=sayi1
+sayi1=sayi2
+sayi2=temp
+
+print(sayi1)
+print(sayi2)
+
+# 5. sorunun çözümünü buraya yazabilirsin.
+
+tamsayi = print(type(3))
+ondaliklisayi = print(type(3.14))
+karmasikifade = print(type((1+2j)/(1+1j)))
+dogruyanlisifade = print(type(True))
+
+tamsayi = str(3)
+ondaliklisayi = str(3.14)
+karmasikifade = str((1+2j)/(1+1j))
+dogruyanlisifade = str(True)
+
+print(type(tamsayi))
+print(type(ondaliklisayi))
+print(type(karmasikifade))
+print(type(dogruyanlisifade))
+
+# 6. sorunun çözümünü buraya yazabilirsin.
+A = float(input("Birinci kenar uzunluğunu girin: "))
+B = float(input("İkinci kenar uzunluğu girin: "))
+
+cevre = 2*(A+B)
+alan = A*B
+
+print(cevre)
+print(alan)
+
+# 7. sorunun çözümünü buraya yazabilirsin.
+kisisayisi = int(input("Kişi sayısını giriniz: "))
+fatura = float(input("Ödemeyi giriniz: "))
+bahsisorani = float(input("Bahsis orani giriniz: "))
+
+kisibasiodeme = ((fatura*bahsisorani/100)+fatura)/kisisayisi
+print(kisibasiodeme)
+
+# 8. sorunun çözümünü buraya yazabilirsin.
+suannufus = 2000000
+dogum = 5*(365*24*60*60)//7
+olum = 5*(365*24*60*60)//13
+beyingocu = 5*(365*24*60*60)//45
+
+besyilsonra = (suannufus+dogum-olum+beyingocu)
+print(besyilsonra)
