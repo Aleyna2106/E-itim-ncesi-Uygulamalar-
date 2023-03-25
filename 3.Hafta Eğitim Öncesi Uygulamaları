@@ -1,0 +1,95 @@
+# 1.Problemin Çözümünü Buraya Yazınız
+A = int(input("Bir sayı girin: "))
+if A % 7 == 0:
+    print("Sayı tam bölünüyor.")
+else:
+    print("Sayı tam bölünmüyor.")
+    
+    # 2.Problemin Çözümünü Buraya Yazınız
+vize = int(input("Vize notunuzu giriniz:"))
+final = int(input("Final notunuzu giriniz:"))
+yilsonunotu = (vize*0,40)+(final*0,60)
+
+
+if (final < 50):
+    print("Harf notu FF")
+
+if (yilsonunotu >= 85):
+    print("Harf notu AA")
+elif (yilsonunotu >=75):
+    print("Harf notu BA")
+elif (yilsonunotu >= 70):
+    print("Harf notu BB")
+elif (yilsonunotu >= 65):
+    print("Harf notu CB")
+elif (yilsonunotu >= 60):
+    print("Harf notu CC")
+elif (yilsonunotu >= 55):
+    print("Harf notu DC")
+elif (yilsonunotu >= 50):
+    print("Harf notu DD")
+elif (yilsonu < 50):
+    print("Harf notu FF. Kaldınız")
+
+
+# 3.Problemin Çözümünü Buraya Yazınız
+
+isim1 = str(input("İsim giriniz:"))
+yas1 = int(input("Yaş giriniz:"))
+isim2 = str(input("İsim giriniz:"))
+yas2 = int(input("Yaş giriniz:"))
+
+print(isim1)
+print(yas1)
+print(isim2)
+print(yas2)
+
+if yas1 > yas2:
+    print(f"{isim1}'in yaşı daha büyük ve yaşı {yas1}'tir.")
+elif yas2 > yas1:
+    print(f"{isim2}'in yaşı daha büyük ve yaşı {yas2}'tir.")
+    
+    # 4.Problemin Çözümünü Buraya Yazınız
+atesolcum = float(input("Ateş ölçümü giriniz:"))
+
+if atesolcum < 37.5:
+    print("Ateşin {} derece. AVM'ye girebilirsin! Maske takmayı unutma.".format(atesolcum))
+    print(f"Ateşin {atesolcum} derece. AVM'ye girebilirsin! Maske takmayı unutma.")
+elif atesolcum > 37.5:
+    print("Ateşin {} derece. AVM'ye giremezsin! Hemen evive dön.".format(atesolcum))
+    print(f"Ateşin {atesolcum} derece. AVM'ye giremezsin! Hemen evive dön.")
+    
+    # 5.Problemin Çözümünü Buraya Yazınız
+kilo = float(input("Kilonuzu giriniz:"))
+boy = float(input("Boyunuzu giriniz (m cinsinden):"))
+bedenkitleindeksi = kilo/(boy**2)
+
+print("Beden kitle indeksiniz:", bedenkitleindeksi)
+
+if bedenkitleindeksi <= 18.5:
+    print("Zayıf")
+elif bedenkitleindeksi <=25:
+    print("Normal")
+elif bedenkitleindeksi <= 30:
+    print("Fazla kilolu")
+elif bedenkitleindeksi > 30:
+    print("Obez")
+
+# 6.Problemin Çözümünü Buraya Yazınız
+yas = int(input("Yaşınızı giriniz:"))
+egitim = str(input("Eğitim durumunuzu giriniz:"))
+
+if (int(yas) >= 18 and (egitim == "üniversite" or egitim == "lise")): 
+    print("Ehliyet alabilir.")
+else:
+    print("Ehliyet alamaz.")
+    
+    # 7.Problemin Çözümünü Buraya Yazınız
+yil = int(input("Bir yıl giriniz:"))
+
+print(yil)
+
+if (yil % 4 == 0 or yil % 400 == 0):
+    print("Artık yıl")
+else:
+    print("Artık yıl değildir")
