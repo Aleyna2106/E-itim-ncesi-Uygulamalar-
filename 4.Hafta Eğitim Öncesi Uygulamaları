@@ -1,0 +1,117 @@
+# 1.Problemin Çözümünü Buraya Yazınız
+numararehberi = {"Aleyna" : "0541 686 90 18",
+                 "Aslı" : "1110 101 10 01",
+                 "Hamit" : "0559 489 58 72"}
+print(numararehberi[input("Lütfen bir isim giriniz: ")])
+
+# 2.Problemin Çözümünü Buraya Yazınız
+sirketcalisanlari = {"Ayça" : "Memleket" : "Balıkesir", "Yaş" : "35", "Görev" : "İnsan Kaynakları Müdürü",
+                     "Aleyna" : "Memleket" : "Karabük", "Yaş" : "24", "Görev" : "Teklif ve İhale Mühendisi",
+                     "Devran" : "Memleket" : "Mardin", "Yaş" : "25", "Görev" : "Planlama Mühendisi"}
+print(sirketcalisanlari(input(["Bir isim giriniz: "])))
+
+# 3.Problemin Çözümünü Buraya Yazınız
+notlar = {"Aleyna" : {"ilk sinav notu" : 76,
+                      "ikinci sinav notu : " : 96,
+                      "üçüncü sinav notu :" : 87},
+           "Aslıhan" : {"ilk sinav notu" : 71,
+                      "ikinci sinav notu : " : 81,
+                      "üçüncü sinav notu :" : 67},
+            "Sıla" : {"ilk sinav notu" : 88,
+                      "ikinci sinav notu : " : 92,
+                      "üçüncü sinav notu :" : 80}}
+isim = input("Lütfen isim giriniz: ")
+ortalama = (notlar[isim]["ilk sinav notu"]+notlar[isim]["ikinci sinav notu"]+notlar[isim]["üçüncü sinav notu"])/3 
+print(notlar[isim], ortalama)                    
+
+# 1-  "Bmw, Mercedes, Opel, Mazda" elemanlarına sahip bir liste oluşturunuz.
+liste = ["BMW", "Mercedes", "Opel", "Mazda"]
+print(liste)
+# 2-  Liste Kaç elemanlıdır ?
+print(len(liste))
+
+# 3-  Listenin ilk ve son elemanı nedir ?
+print(liste[0])
+print(liste[-1])
+
+# 4-  Mazda değerini Toyota ile değiştirin.
+liste[4] = "Toyota"
+print(liste)
+
+# 5-  Listenin -2 indeksindeki değer nedir ?
+print(liste[-2])
+
+# 6-  Listenin ilk 3 elemanını alın.
+print(liste[0:3])
+# 7-  Listenin son 2 elemanı yerine "Toyota" ve "Renault" değerlerini ekleyin.
+liste[3:] = "Toyota", "Renault"
+print(liste)
+
+# 8-  Listenin üzerine "Audi" ve "Nissan" değerlerini ekleyin.
+liste.append("Audi")
+liste.append("Nissan")
+print(liste)
+
+# 9- Listenin son elemanını silin.
+liste.pop()
+
+# 10- Liste elemanlarını tersten yazdırınız.
+liste[::-1]
+
+# 11- Aşağıdaki verileri bir liste içinde saklayınız. 
+
+      # studentA: Yiğit Bilgi 2010, (70,60,70)
+      # studentB: Sena Turan  1999, (80,80,70)
+      # studentC: Ahmet Turan 1998, (80,70,90) 
+
+listeornek = {{"studentA" : "Yigit Bilgi", "2010": "70,60,70"},
+              {"studentB" : "Sena Turan", "1999": "80,80,70"},
+              {"studentC" : "Ahmet Turan", "1998": "80,70,90"}}
+print(listeornek)
+
+# 12- Liste elemanlarını ekrana yazdırınız.
+print(liste1)
+
+
+  
+names = ['Ali','Yağmur','Hakan','Deniz']
+years = [1998, 2000, 1998, 1987]
+
+# 13-  "Cenk" ismini listenin sonuna ekleyiniz.
+names.append("Cenk")
+print(names)
+
+# 14-  "Sena" değerini listenin başına ekleyiniz.
+names.insert(0, "Sena")
+print(names)
+
+# 15-  "Deniz" ismini listeden siliniz.
+del names[4]
+print(names)
+
+# 16-  "Ali" listenin bir elemanı mıdır ?
+a = "Ali" in names
+print(a)
+# 17-  Liste elemanlarını ters çevirin.
+names[::-1]
+print(names)
+# 18-  Liste elemanlarını alfabetik olarak sıralayınız.
+names.sort()
+print(names)
+
+# 19-  years listesini rakamsal büyüklüğe göre sıralayınız.
+years.sort()
+print(years)
+
+# 20-  str = "Chevrolet,Dacia" karakter dizisini listeye çeviriniz.
+b = "Chevrolat, Dacia"
+print(type(b))
+b = list(b)
+print(type(b))
+# 21- years dizisinde kaç tane 1998 değeri vardır ?
+years.count(1998)
+
+# 22- years dizisinin tüm elemanlarını siliniz.
+years.clear()
+print(years)
+
