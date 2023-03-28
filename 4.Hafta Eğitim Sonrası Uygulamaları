@@ -1,0 +1,71 @@
+# 1.Problemin Çözümünü Buraya Yazınız
+ogrenciler = {}
+print(type(ogrenciler))
+
+while True:
+    ogrenci = int(input("Kaçıncı öğrenci: "))
+    okulnumarasi = int(input("Öğrencinin okul numarası: "))
+    isimsoyisim = input("Öğrencinin ismi ve soyismi: ")
+    telefonnumarasi = input("Öğrencinin telefon numarası: ")
+    dogumtarihi = input("Öğrencinin doğum tarihi: ")
+    ogrenciler[ogrenci] = {"Okul Numarası" : okulnumarasi, "İsim ve soyisim" : isimsoyisim, "Telefon Numarası" : telefonnumarasi, "Doğum Tarihi" : dogumtarihi}
+    if ogrenci == 3:
+    break
+    else:
+    continue
+    print(ogrenci) 
+    
+    # 2.Problemin a Şıkkının Çözümünü Buraya Yazınız
+numbers = [5,10,10,15,15,15,20,20,20,20]
+liste = []
+
+for i in numbers:
+    if i in liste:
+        continue
+    else: 
+        liste.appened(i)
+print(liste)
+
+# 2.Problemin b Şıkkının Çözümünü Buraya Yazınız
+numbers = [5,10,10,15,15,15,20,20,20,20]
+uniqueNumbers = []
+repeatNumbers = []
+
+for i in numbers:
+    if numbers.count(i) == 1:
+        uniqueNumbers.append(i)
+    else:
+        repeatNumbers.append(i)
+print(uniqueNumbers)
+print(repeatNumbers)
+
+# 3.Problemin Çözümünü Buraya Yazınız
+
+kume1 = {1,2,3,4,5}
+kume2 = {4,5,6,7,8}
+
+print("Birleşimleri: ", kume1 | kume2)
+print("Kesişimleri: ", kume1 & kume2)
+print("Farkları:", kume1-kume2)
+
+# 4.Problemin Çözümünü Buraya Yazınız
+ornek = "yetgen JUMP"
+
+print(ornek.capitalize())
+print(ornek.lower())
+print(ornek.upper())
+print(ornek.swapcase())
+print(ornek.title())
+print(ornek.replace("e","i"))
+print(ornek.endswith("JUMP"))
+print(ornek.startswith("y"))
+print(ornek.find("g"))
+print(ornek.index("t"))
+print(ornek.count("e"))
+print(ornek.split(","))
+print(ornek.strip())
+print("*".join(ornek))
+print(ornek.islower())
+print(ornek.isalpha())
+print(ornek.isdigit())
+      
