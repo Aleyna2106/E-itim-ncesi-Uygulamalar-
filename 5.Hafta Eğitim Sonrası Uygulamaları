@@ -1,0 +1,100 @@
+# 1.Problemin Çözümünü Buraya Yazınız
+vi = int(input("Bir ilk hız girin:"))
+a = int(input("Bir son hız girin:"))
+t = int(input("Bir ivme girin:"))
+vf = (vi+(a*t)) 
+
+def sonhizhesapla(vi,a,t):
+    vf = int(vi+a*t)
+    print("son hız:", vf)
+
+sonhizhesapla(vi,a,t)
+
+# 2.Problemin Çözümünü Buraya Yazınız
+def mukemmel_mi(sayi):
+    toplam = 0
+    
+   for i in range(1,sayi):
+
+    if (sayi % i == 0):
+        toplam += i
+
+    return toplam == sayi 
+
+for i in range(1,1000):
+    if (mukemmel_mi(i)) 
+      print("Mükemmel sayı:", i)
+      
+# 3.Problemin Çözümünü Buraya Yazınız
+def pisagor_bulma():
+
+    pisagorlistesi = list() 
+
+    for a in range(1,101):
+
+        for b in range(1,101):
+
+            c = ((a**2)+(b**2))**0,5
+
+            if (c == int(c)):
+                pisagorlistesi.append(a,b,int(c))
+    
+    return pisagorlistesi
+
+for i in pisagor_bulma():
+    print(i)            
+
+# 4.Problemin Çözümünü Buraya Yazınız
+
+yukseklik = int(input("Duvar yüksekliği girin:"))
+genislik = int(input("Duvar genişliği girin:"))
+kaplama = 5 
+
+import math
+
+def boyama(yukseklik, genislik, kaplama):
+    alan = yukseklik*genislik
+    kutusayisi = math.ceil(alan/kaplama)
+
+    print(f"{kutusayisi} kutu boyaya ihtiyaç vardır.")
+
+boyama(yukseklik, genislik, kaplama)    
+
+# 5.Problemin Çözümünü Buraya Yazınız
+def count(val):
+    vov = 0
+    con = 0
+
+    for i in range(len(val)):
+        if val[i]  in["a","e","ı","i","o","ö","u","ü"]:
+                 vov = vov+1
+        else:
+              con = con+1
+    print("Ünlü harf sayısı:", vov)
+    print("Ünsüz harf sayısı:", con)
+
+x = input("Bir kelime girin:")
+print(x)
+count(x)                       
+
+# 6.Problemin Çözümünü Buraya Yazınız
+def findeven(liste):
+    enumerate = []
+    for number in liste:
+        if number % 2 == 0:
+            enumerate.append(number)
+        print(enumerate)
+list_of_numbers = [1,2,3,4,5,6,7,8,9,10]
+
+findeven(list_of_numbers)
+
+# 7.Problemin Çözümünü Buraya Yazınız
+def toplam(sayi):
+    
+    if sayi == 0:
+        
+        return 0
+    else:
+       return sayi + toplam(sayi - 1)
+print(toplam(10))
+    
