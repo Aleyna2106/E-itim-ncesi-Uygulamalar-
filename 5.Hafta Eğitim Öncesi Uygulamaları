@@ -1,0 +1,80 @@
+# 1.Problemin Çözümünü Buraya Yazınız
+kisakenar = input("Kısa kenarı giriniz : ")
+ 
+uzunkenar = input("Uzun kenarı giriniz : ")
+ 
+cevre = ( int(kisakenar) + int(uzunkenar) ) * 2
+alan = int(kisakenar) * int(uzunkenar)
+ 
+print("\nBahçe için gereken çit uzunluğu : {0}".format(cevre))
+print("\nBahçenin alanı : {0}".format(alan))
+
+# 2.Problemin Çözümünü Buraya Yazınız
+ilksayi = int(input("İlk sayıyı girin: "))
+ikincisayi = int(input("İkinci sayıyı girin: "))
+ 
+print(ilksayi,"ile",ikincisayi,"arasındaki asal sayılar:")
+ 
+for sayi in range(ilksayi,ikincisayi + 1):
+   if sayi > 1:
+       for i in range(2,sayi):
+           if (sayi % i) == 0:
+               break
+       else:
+           print(sayi)
+ 
+ 
+# 3.Problemin Çözümünü Buraya Yazınız
+calismasaati = int(input("Çalışma saati girin:"))
+saatlikucret=0
+if calismasaati <= 40:
+    saatlikucret = 10
+elif calismasaati > 40:
+    saatlikucret = 15
+
+computePay = (calismasaati*saatlikucret)
+
+print(computePay)
+
+# 4.Problemin Çözümünü Buraya Yazınız
+
+kisisayisi = int(input("Gelecek kişi sayısını girin:"))
+arac = 4
+aracsayisi = kisisayisi/arac
+
+print("Kişi sayısı:", kisisayisi)
+if (kisisayisi % 4 == 0):
+    
+  print("Gereken araç:", aracsayisi)
+    
+else:
+ round(aracsayisi)
+ print("Gereken araç:", round(aracsayisi))
+  
+  
+sayiTopla = int(input('Sayı Girin : '))
+try:
+    if int(sayiTopla)>=0:
+        i = 0
+        toplam = 0
+        while (i<=int(sayiTopla)):
+            toplam = toplam + i
+            i = i + 1
+    print("0 ve {0} arası sayıların toplamı = {1}".format(sayiTopla,toplam))
+except:
+    print("Lütfen Sayı girişi yapın.")
+    
+# 6.Problemin Çözümünü Buraya Yazınız
+def sorttuple (a):
+    return(sorted(a, key = lambda x: x[1]))
+
+a = [("xxx",1),("xxx",2),("xxx",9),("xxx",3), ("xxx",1),("xxx",13),("xxx",26),("xxx",4)]
+print(sorttuple(a))
+
+# 7.Problemin Çözümünü Buraya Yazınız
+
+ciftsayilar=[]
+for i in range(1,101):
+    if i%2==0:
+        ciftsayilar.append(i)
+print(ciftsayilar)
