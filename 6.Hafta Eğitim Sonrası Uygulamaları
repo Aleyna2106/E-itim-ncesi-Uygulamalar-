@@ -1,0 +1,36 @@
+# 1.sorunun cevabı
+liste = [18, 22, 8]
+
+def cift(sayi):
+    if sayi % 2 == 0:
+        return sayi
+    else:
+        raise ValueError("hata")
+
+
+for i in liste:
+    print(cift(i))
+    
+# 2.sorunun cevabı
+import random as rastgele
+import time 
+tutulanSayi = rastgele.randint(0, 100)
+print (tutulanSayi)
+kullaniciHakki = 5
+sabitKullaniciHakki = kullaniciHakki
+
+for i in range(kullaniciHakki):
+    tahmin = int(input("Tahmin:  "))
+    print ("Kontrol ediliyor..")
+    time.sleep(3)
+    if tutulanSayi > tahmin :
+        print ("Daha yüksek tahmin etmen lazım")
+    elif tutulanSayi < tahmin :
+        print ("Daha d  üşük tahmin etmen lazım")
+    else:
+        print("Bildin", sabitKullaniciHakki - (kullaniciHakki - 1 ))
+        break
+    kullaniciHakki -= 1
+    print("Kalan tahmin hakkin : ", kullaniciHakki)
+    if kullaniciHakki == 0:
+        break
