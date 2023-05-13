@@ -1,0 +1,38 @@
+#1. sorunun cevabı
+def urun_bilgisi():
+    
+    with open("ürünler.txt", "a") as f:
+        
+        ad = input("Ürün adını girin: ")
+        fiyat = input("Ürün fiyatını girin: ")
+        
+        f.write(f"{ad}, {fiyat}\n")
+
+        print(f"{ad} isimli ürün {fiyat} TL fiyatıyla kayıt edildi.")
+        
+#2. sorunun cevabı
+def kelime_degistir(dosya_adi, eski_kelime, yeni_kelime):
+    
+    with open(dosya_adi, "r") as f:
+        dosya_icerigi = f.read()
+
+    yeni_dosya_icerigi = dosya_icerigi.replace(eski_kelime, yeni_kelime)
+
+    with open(dosya_adi, "w") as f:
+        f.write(yeni_dosya_icerigi)
+
+    print(f"{dosya_adi} dosyası güncellendi")
+    
+ #3. sorunun cevabı
+ class Vehicle:
+    def __init__(self, name, speed, mileage):
+        self.name = name
+        self.speed = speed
+        self.mileage = mileage
+
+class Bus(Vehicle):
+    pass
+
+bus = Bus("Okul Volvo", 180, 12)
+
+print("Name:", bus.name, "Speed:", bus.speed, "Mileage:", bus.mileage)
