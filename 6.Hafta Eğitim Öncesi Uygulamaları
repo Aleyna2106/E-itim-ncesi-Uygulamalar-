@@ -1,0 +1,58 @@
+#1. sorunun cevabı
+def dikdortgen_alani(lst):
+    
+    def alan(x):
+        return x[0] * x[1]
+    
+    
+    alanS = list(map(alan, lst))
+    
+    return alanS
+
+
+dikdortgenler = [(3,4),(10,3),(5,6),(1,9)]
+alanS = dikdortgen_alani(dikdortgenler)
+print(alanS)
+
+#2. sorunun cevabı
+def ucgenMi(tup):
+    a, b, c = tup
+    return a + b > c and a + c > b and b + c > a
+
+def ucgen(liste):
+    return list(filter(ucgenMi, liste))
+
+
+liste = [(3,4,5),(6,8,10),(3,10,7)]
+print(ucgen(liste)) 
+
+#3. sorunun cevabı
+from functools import reduce
+
+def cift_sayilarin_toplami(sayilar):
+    cift_sayilar = filter(lambda x: x % 2 == 0, sayilar)
+    ciftlerin_toplami = reduce(lambda x, y: x + y, cift_sayilar)
+    return ciftlerin_toplami
+
+sayilar = [1,2,3,4,5,6,7,8,9,10]
+print(cift_sayilarin_toplami(sayilar))
+
+#4. sorunun cevabı
+isim = ["Kerim", "Tarik", "Ezgi", "Kemal", "Ilkay", "Şükran", "Merve"]
+soyİsim = ["Yılmaz", "Öztürk", "Dağdeviren", "Atatürk", "Dikmen", "Kaya", "Polat"]
+
+for isim, soyİsim in zip(isim, soyİsim):
+    print(isim, soyİsim)
+
+#5. sorunun cevabı
+lst = ['yetgen', 'core', 'python2', 'program', 2022, 'basic2']
+
+for item in lst:
+    try:
+        num = int(item)
+        print(num)
+    except ValueError:
+        pass
+    
+
+
