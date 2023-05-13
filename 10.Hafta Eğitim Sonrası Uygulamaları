@@ -1,0 +1,46 @@
+#1. sorunun cevabı
+import numpy as np
+
+dizi= np.array([55,7,4,99,15])
+
+diziSıra = np.sort(dizi)
+
+print(diziSıra)
+
+#2. sorunun cevabı
+import numpy as np
+dizi = np.array([10, 15, 30, 45, 60])
+dizi2 = np.arange(5, 16)
+dizi3 = np.arange(50, 101, 5)
+dizi4 = np.zeros(10)
+dizi5 = np.ones(10)
+dizi6 = np.linspace(0, 100, 5)
+dizi7 = np.random.randint(10, 31, 5)
+dizi8 = np.random.uniform(-1, 1, 10)
+dizi9 = np.random.randint(10, 51, (3, 5))
+print("Satır toplamları:", np.sum(dizi9, axis=1))
+print("Sütun toplamları:", np.sum(dizi9, axis=0))
+print("En büyük değer:", np.max(dizi9))
+print("En küçük değer:", np.min(dizi9))
+print("Ortalama değer:", np.mean(dizi9))
+max_index = np.argmax(dizi9)
+print("En büyük değerin indeksi:", max_index)
+dizi13 = np.arange(10, 21)
+print("İlk 3 eleman:", dizi13[:3])
+print("Tersten yazdırılmış dizi:", dizi13[::-1])
+print("İlk satır:", dizi9[0])
+print("2. satır, 3. sütundaki eleman:", dizi9[1, 2])
+print("Tüm satırlardaki ilk elemanlar:", dizi9[:, 0])
+print("Kareleri alınmış matris:")
+print(np.square(dizi9))
+pozitif = dizi9[(dizi9 > 0) & (dizi9 % 2 == 0)]
+print("Pozitif çift sayılar:", pozitif)
+
+
+
+
+
+
+
+
+
