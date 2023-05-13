@@ -1,0 +1,123 @@
+#1. sorunun cevabı
+import time
+
+def vki(kilo, boy):
+    print(kilo, boy)
+
+    vki = kilo / (boy ** 2)
+    print(vki)
+
+    vki = round(vki, 1)
+
+    if vki < 18.5:
+        return "zayıf"
+    elif vki <= 24.9:
+        return "normal kilolu"
+    elif vki <= 29.9:
+        return "fazla kilolu"
+    elif vki <= 39.9:
+        return "obez"
+    else:
+        return "ileri obez"
+
+
+def cikti_olustur(isim, yas, kilo, vki, deger):
+    kayit_tarihi = time.ctime(time.time())
+
+    t1 = f"kullanıcının adı: {isim}\n"
+    t2 = f"kullanıcının yaş, kilo, boy bilgisi: {yas}, {kilo}, {boy}\n"
+    t3 = f"kullanıcının vücut kitle indeksi: {vki}\n"
+    t4 = f"değer aralığı: {deger}\n"
+    t5 = f"oluşturma tarihi: {kayit_tarihi}\n"
+
+    output = t1 + t2 + t3 + t4 + t5
+
+    return output
+
+def giris():
+    login_count = int(input("Kaç adet giriş yapacaksınız? "))
+
+    for i in range(login_count):
+        isim = input(f"{i+1}. kullanıcının adı: ")
+        yas = int(input(f"{i+1}. kullanıcının yaşı: "))
+        boy = float(input(f"{i+1}. kullanıcının boyu (metre cinsinden): "))
+        kilo = float(input(f"{i+1}. kullanıcının kilosu: "))
+
+        deger = vki(kilo, boy)
+        cikti = cikti_olustur(isim, yas, kilo, deger)
+
+        with open("kullanicilar.txt", "a") as f:
+            f.write(cikti)
+            f.write("\n")
+        
+        print("Kayıt başarıyla oluşturuldu!")
+        
+#2. sorunun cevabı
+import time
+
+menu = {
+    "elma":1.50,
+    "armut":3.55,
+    "karpuz":4.59,
+    "şeftali":4.99,
+    "muz":5.00,
+}
+
+purchases = []
+
+def display_menu():
+    print("..YETBAR MENU..")
+
+    for item in list(menu.keys()):
+        print(f"{item.upper():<10}: {menu[item]}TL ")
+
+def tek_urun_fiyat_hesaplama (urun, adet):
+    assert adet >=0 ,"urun adedi 0 ve 0 dan kucuk olamaz."
+    if urun not in list (menu.keys()):
+        return None
+    else:
+        return menu [urun] * adet 
+
+def satın_alma():
+    display_menu()
+    satin_alinan_urunler = []
+    satin_alma_adeti = []
+
+    while True:
+        urun = input("Satın almak istediğiniz ürünü girin.Çıkış yapmak için 0'a basın: ")
+        if urun == '0':
+            break
+        adet = int(input(f"{urun.capitalize()} kaç adet? "))
+        if adet <= 0:
+            print("Adet sıfırdan büyük olmalı.")
+            continue
+        fiyat = tek_urun_fiyat_hesaplama(urun, adet)
+        if fiyat is None:
+            print("Ürün bulunamadı.")
+        continue
+        satin_alinan_urunler.append(urun)
+        satin_alma_adeti.append(adet)
+        purchases.append((urun, adet, fiyat, time.strftime("%Y-%m-%d %H:%M:%S")))
+
+    toplam_fiyat = sum([tek_urun_fiyat_hesaplama(urun, adet) for urun, adet in zip(satin_alinan_urunler, satin_alma_adeti)])
+    print(f"Toplam fiyat: {toplam_fiyat:.2f} TL")
+
+    return satin_alinan_urunler, satin_alma_adeti
+
+while True:
+    secim = input("1- Menu Göster\n2- Satın Alma\nSeçiminiz: ")
+    if secim == '1':
+        display_menu()
+    elif secim == '2':
+        satin_alinan_urunler, satin_alma_adeti = satın_alma()
+        print(f"Satın alınan ürünler: {satin_alinan_urunler}")
+        print(f"Adet: {satin_alma_adeti}")
+    else:
+        print("Geçersiz seçim. Tekrar deneyin.")   
+
+
+
+
+
+
+
